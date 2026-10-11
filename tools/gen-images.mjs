@@ -49,7 +49,7 @@ function buildPrompt(shot) {
   return [
     'Use your image generation tool to create exactly ONE image. Do not write code, do not create or edit any files, do not run shell commands. Just generate the image and reply "done".',
     `Image size: ${shot.size}.`,
-    shot.ref ? 'The attached image is the brand label artwork to reference.' : '',
+    shot.ref ? (shot.refNote ?? 'The attached image is the brand label artwork to reference.') : '',
     style,
     `Shot: ${shot.prompt}`,
     extra,

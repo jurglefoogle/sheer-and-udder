@@ -166,47 +166,30 @@
       <section class="pour" id="pour" data-pour>
         <div class="pour__pin">
           <div class="container pour__grid">
-            <div class="pour__head">
+            <figure class="pour__stage">
+              <div class="pour__arch" data-pour-arch>
+                <div class="pour__stack" data-pour-stack>
+                  <span class="pic pic--cover" data-pic="pour-1" data-alt="Cold milk pouring into a crystal highball glass" data-sizes="(min-width: 901px) 34vw, 80vw"></span>
+                  <span class="pic pic--cover" data-pic="pour-2" data-alt="Cocoa mix falling from a brass spoon into the milk" data-sizes="(min-width: 901px) 34vw, 80vw"></span>
+                  <span class="pic pic--cover" data-pic="pour-3" data-alt="A ribbon of whiskey pouring into the chocolate milk" data-sizes="(min-width: 901px) 34vw, 80vw"></span>
+                  <span class="pic pic--cover" data-pic="pour-4" data-alt="A gold frother whisking the drink into foam" data-sizes="(min-width: 901px) 34vw, 80vw"></span>
+                  <span class="pic pic--cover" data-pic="pour-5" data-alt="The finished glass of adult chocolate milk on the bar" data-sizes="(min-width: 901px) 34vw, 80vw"></span>
+                </div>
+                <canvas class="pour__canvas" data-pour-canvas aria-hidden="true"></canvas>
+              </div>
+              <div class="pour__num" aria-hidden="true"><span data-pour-num>01</span><small>/05</small></div>
+            </figure>
+            <div class="pour__copy">
               <p class="eyebrow">How It Pours</p>
               <h2 class="display">Five steps to <em>after hours.</em></h2>
+              <ol class="pour__steps" data-pour-steps>
+                <li class="is-active"><span class="pour__k">01 &middot; Milk</span><strong>8 oz, any kind</strong><div class="pour__more"><p>Dairy, almond, oat, banana &mdash; she isn&rsquo;t picky.</p></div></li>
+                <li><span class="pour__k">02 &middot; The Mix</span><strong>2 Tbsp Sheer &amp; Udder</strong><div class="pour__more"><p>One level scoop. Heaping is between you and your conscience.</p></div></li>
+                <li><span class="pour__k">03 &middot; Spirit <em>(optional)</em></span><strong>1&frac12;&ndash;2 oz</strong><div class="pour__more"><p>Whiskey, rum, or whatever&rsquo;s winking at you from the cabinet.</p></div></li>
+                <li><span class="pour__k">04 &middot; Froth</span><strong>Whisk it into velvet</strong><div class="pour__more"><p>Milk frother, whisk, blender &mdash; or a very determined spoon.</p></div></li>
+                <li><span class="pour__k">05 &middot; Sip</span><strong>Adult chocolate milk</strong><div class="pour__more"><p>Hot, cold, or over ice. No crusts were cut in the making of this drink.</p></div></li>
+              </ol>
             </div>
-            <div class="pour__stage">
-              <div class="pour__num" aria-hidden="true"><span data-pour-num>01</span><small>/05</small></div>
-              <svg class="pour__glass" viewBox="0 0 220 320" aria-hidden="true">
-                <defs>
-                  <clipPath id="glass-clip"><path d="M32 22h156l-15 268a14 14 0 0 1-14 13H61a14 14 0 0 1-14-13z" /></clipPath>
-                  <linearGradient id="glass-shine" x1="0" x2="1">
-                    <stop offset="0" stop-color="#fff" stop-opacity=".22" />
-                    <stop offset=".18" stop-color="#fff" stop-opacity="0" />
-                    <stop offset=".82" stop-color="#fff" stop-opacity="0" />
-                    <stop offset="1" stop-color="#fff" stop-opacity=".12" />
-                  </linearGradient>
-                </defs>
-                <g clip-path="url(#glass-clip)">
-                  <g class="pour__liquid" data-liquid>
-                    <path class="pour__wave" data-wave d="M-220 0 q27.5 -10 55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 V400 H-220z" />
-                    <rect class="pour__spirit" data-spirit x="0" y="0" width="220" height="400" />
-                    <g class="pour__foam" data-foam>
-                      <ellipse cx="60" cy="2" rx="40" ry="9" /><ellipse cx="120" cy="0" rx="46" ry="11" /><ellipse cx="172" cy="3" rx="36" ry="8" />
-                    </g>
-                  </g>
-                  <g class="pour__cocoa" data-cocoa></g>
-                </g>
-                <path d="M32 22h156l-15 268a14 14 0 0 1-14 13H61a14 14 0 0 1-14-13z" fill="url(#glass-shine)" />
-                <path class="pour__outline" d="M32 22h156l-15 268a14 14 0 0 1-14 13H61a14 14 0 0 1-14-13z" />
-                <g class="pour__whisk" data-whisk>
-                  <path d="M110 -60 V120" />
-                  <path d="M110 120 c-22 0 -22 52 0 52 c22 0 22 -52 0 -52z M110 120 c-10 0 -10 52 0 52 c10 0 10 -52 0 -52z" />
-                </g>
-              </svg>
-            </div>
-            <ol class="pour__steps" data-pour-steps>
-              <li class="is-active"><span class="pour__k">01 &middot; Milk</span><strong>8 oz, any kind</strong><p>Dairy, almond, oat, banana &mdash; she isn&rsquo;t picky.</p></li>
-              <li><span class="pour__k">02 &middot; The Mix</span><strong>2 Tbsp Sheer &amp; Udder</strong><p>One level scoop. Heaping is between you and your conscience.</p></li>
-              <li><span class="pour__k">03 &middot; Spirit <em>(optional)</em></span><strong>1&frac12;&ndash;2 oz</strong><p>Whiskey, rum, or whatever&rsquo;s winking at you from the cabinet.</p></li>
-              <li><span class="pour__k">04 &middot; Froth</span><strong>Whisk it into velvet</strong><p>Milk frother, whisk, blender &mdash; or a very determined spoon.</p></li>
-              <li><span class="pour__k">05 &middot; Sip</span><strong>Adult chocolate milk</strong><p>Hot, cold, or over ice. No crusts were cut in the making of this drink.</p></li>
-            </ol>
           </div>
         </div>
       </section>

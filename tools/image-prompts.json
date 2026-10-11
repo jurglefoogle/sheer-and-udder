@@ -106,6 +106,39 @@
       "id": "cocktail-coconut-confidential",
       "size": "1024x1024",
       "prompt": "Cocktail photograph: a short glass of dark chocolate milk cocktail with dark rum, rimmed with toasted coconut, garnished with a candied pecan and coconut flakes, a caramel drizzle, on a dark walnut bar."
+    },
+    {
+      "id": "pour-5",
+      "size": "1024x1536",
+      "prompt": "Series 'How It Pours', shot 5 of 5. Scene (identical in every shot of the series): a single tall, heavy-bottomed cut-crystal highball glass with fine vertical facets stands centered on a polished dark walnut bar top with a thin brass edge rail, the bar surface filling the lower fifth of the frame. Background: a deep out-of-focus speakeasy back bar with warm amber bokeh and a hint of cherry red, falling off to near-black ganache brown. Camera at eye level with the middle of the glass, straight-on, glass perfectly centered and occupying about the middle 38% of the frame width, generous dark negative space above the glass. Warm tungsten key light from the left, soft cream rim light from behind outlining the crystal edges. The glass is filled to just below the rim with rich, velvety, opaque milk-chocolate-brown chocolate milk, topped with a fine silky micro-foam cap lightly dusted with cocoa powder. A few beads of condensation on the crystal. Perfectly still, serene, the finished drink."
+    },
+    {
+      "id": "pour-1",
+      "size": "1024x1536",
+      "ref": "assets/raw/pour-5.png",
+      "refNote": "The attached image is the master plate of this series. Match it precisely: the exact same glass shape and facets, the same walnut bar and brass rail, the same background bokeh, the same camera position, framing, lens and lighting. Only change the glass contents and the action described.",
+      "prompt": "Series 'How It Pours', shot 1 of 5. Scene (identical in every shot of the series): a single tall, heavy-bottomed cut-crystal highball glass with fine vertical facets stands centered on a polished dark walnut bar top with a thin brass edge rail, the bar surface filling the lower fifth of the frame. Background: a deep out-of-focus speakeasy back bar with warm amber bokeh and a hint of cherry red, falling off to near-black ganache brown. Camera at eye level with the middle of the glass, straight-on, glass perfectly centered and occupying about the middle 38% of the frame width, generous dark negative space above the glass. Warm tungsten key light from the left, soft cream rim light from behind outlining the crystal edges. The glass is about two-thirds full of fresh cold whole milk (bright creamy white). A smooth, glossy stream of milk pours straight down into it from above, entering from the top edge of the frame (the pouring vessel is out of frame), creating a gentle swirl and small bubbles at the surface. Light condensation on the glass."
+    },
+    {
+      "id": "pour-2",
+      "size": "1024x1536",
+      "ref": "assets/raw/pour-5.png",
+      "refNote": "The attached image is the master plate of this series. Match it precisely: the exact same glass shape and facets, the same walnut bar and brass rail, the same background bokeh, the same camera position, framing, lens and lighting. Only change the glass contents and the action described.",
+      "prompt": "Series 'How It Pours', shot 2 of 5. Scene (identical in every shot of the series): a single tall, heavy-bottomed cut-crystal highball glass with fine vertical facets stands centered on a polished dark walnut bar top with a thin brass edge rail, the bar surface filling the lower fifth of the frame. Background: a deep out-of-focus speakeasy back bar with warm amber bokeh and a hint of cherry red, falling off to near-black ganache brown. Camera at eye level with the middle of the glass, straight-on, glass perfectly centered and occupying about the middle 38% of the frame width, generous dark negative space above the glass. Warm tungsten key light from the left, soft cream rim light from behind outlining the crystal edges. The glass is two-thirds full of cold white milk. A cascade of fine dark cocoa powder falls from a vintage brass measuring spoon just visible tipping at the very top edge of the frame, making a soft drifting cloud of cocoa dust in the air above the glass, and dark chocolate ribbons are beginning to bloom and swirl down through the white milk."
+    },
+    {
+      "id": "pour-3",
+      "size": "1024x1536",
+      "ref": "assets/raw/pour-5.png",
+      "refNote": "The attached image is the master plate of this series. Match it precisely: the exact same glass shape and facets, the same walnut bar and brass rail, the same background bokeh, the same camera position, framing, lens and lighting. Only change the glass contents and the action described.",
+      "prompt": "Series 'How It Pours', shot 3 of 5. Scene (identical in every shot of the series): a single tall, heavy-bottomed cut-crystal highball glass with fine vertical facets stands centered on a polished dark walnut bar top with a thin brass edge rail, the bar surface filling the lower fifth of the frame. Background: a deep out-of-focus speakeasy back bar with warm amber bokeh and a hint of cherry red, falling off to near-black ganache brown. Camera at eye level with the middle of the glass, straight-on, glass perfectly centered and occupying about the middle 38% of the frame width, generous dark negative space above the glass. Warm tungsten key light from the left, soft cream rim light from behind outlining the crystal edges. The glass is three-quarters full of chocolate milk, rich brown with a few lighter cream streaks still swirling. A thin glossy ribbon of amber whiskey pours straight down from an antique gold jigger tilted at the very top edge of the frame, splashing slightly where it meets the surface; the amber stream glows like liquid gold in the light."
+    },
+    {
+      "id": "pour-4",
+      "size": "1024x1536",
+      "ref": "assets/raw/pour-5.png",
+      "refNote": "The attached image is the master plate of this series. Match it precisely: the exact same glass shape and facets, the same walnut bar and brass rail, the same background bokeh, the same camera position, framing, lens and lighting. Only change the glass contents and the action described.",
+      "prompt": "Series 'How It Pours', shot 4 of 5. Scene (identical in every shot of the series): a single tall, heavy-bottomed cut-crystal highball glass with fine vertical facets stands centered on a polished dark walnut bar top with a thin brass edge rail, the bar surface filling the lower fifth of the frame. Background: a deep out-of-focus speakeasy back bar with warm amber bokeh and a hint of cherry red, falling off to near-black ganache brown. Camera at eye level with the middle of the glass, straight-on, glass perfectly centered and occupying about the middle 38% of the frame width, generous dark negative space above the glass. Warm tungsten key light from the left, soft cream rim light from behind outlining the crystal edges. The glass is nearly full of chocolate milk being frothed: a slim brushed-gold milk frother wand descends vertically from the top edge of the frame into the drink (only the wand, its handle exits the top of the frame), its whisk head submerged, spinning a gentle vortex and building a rising layer of pale tan foam with tiny bubbles at the top of the glass."
     }
   ]
 }
