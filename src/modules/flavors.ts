@@ -107,8 +107,12 @@ export function initFlavors() {
     if (!reducedMotion) gsap.from(body.querySelectorAll('.fd__body > *'), { y: 24, autoAlpha: 0, stagger: 0.05, duration: 0.8, ease: 'expo.out', delay: 0.2 });
   });
 
-  // Section tint follows the flavor in focus.
+  // Section tint follows the flavor in focus. Only write on change: custom properties
+  // restyle the whole subtree, which is too costly to do every scroll frame.
+  let tinted: Flavor | null = null;
   const setTint = (f: Flavor) => {
+    if (f === tinted) return;
+    tinted = f;
     section.style.setProperty('--flavor-bg', f.bg);
     section.style.setProperty('--accent', f.accent);
   };
@@ -127,7 +131,8 @@ export function initFlavors() {
           start: 'top top',
           end: () => `+=${distance()}`,
           pin: '.flavors__pin',
-          scrub: 0.6,
+          anticipatePin: 1,
+          scrub: true, // Lenis already smooths the scroll; a second lag here feels like drag.
           invalidateOnRefresh: true,
           onUpdate: (self) => {
             gsap.set('[data-flavor-progress]', { scaleX: self.progress });

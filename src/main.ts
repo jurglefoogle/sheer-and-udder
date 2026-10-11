@@ -9,7 +9,7 @@ import { SplitText } from 'gsap/SplitText';
 
 import { initSmoothScroll } from './modules/smooth';
 import { hydratePics } from './modules/media';
-import { initOverlays, initCursor, initMagnetic, initNav, $ } from './modules/ui';
+import { initOverlays, initMagnetic, initNav, $ } from './modules/ui';
 import { runPreloader, runAgeGate, heroIntro } from './modules/intro';
 import { initHeroShader } from './modules/hero-shader';
 import { initReveals, initMarquee, initStory, initPour } from './modules/sections';
@@ -39,7 +39,6 @@ async function boot() {
   initPour();
   initFlavors(); // after the pour pin: ScrollTriggers must be created in page order
   initReveals();
-  initCursor();
   initMagnetic();
   ScrollTrigger.refresh();
 

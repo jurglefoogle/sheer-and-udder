@@ -90,27 +90,6 @@ export function toast(msg: string) {
   toastTimer = window.setTimeout(() => el.classList.remove('is-on'), 2600);
 }
 
-/* ---------- Custom cursor ---------- */
-export function initCursor() {
-  if (!finePointer || reducedMotion) return;
-  document.documentElement.classList.add('has-cursor');
-  const el = $('.cursor');
-  const xTo = gsap.quickTo(el, 'x', { duration: 0.35, ease: 'power3' });
-  const yTo = gsap.quickTo(el, 'y', { duration: 0.35, ease: 'power3' });
-  addEventListener('pointermove', (e) => {
-    xTo(e.clientX);
-    yTo(e.clientY);
-  });
-  addEventListener('pointerdown', () => el.classList.add('is-down'));
-  addEventListener('pointerup', () => el.classList.remove('is-down'));
-  document.addEventListener('pointerover', (e) => {
-    const hit = (e.target as Element).closest('a, button, [data-cursor], select, input');
-    el.classList.toggle('is-hover', Boolean(hit));
-  });
-  document.addEventListener('pointerleave', () => gsap.to(el, { opacity: 0, duration: 0.3 }));
-  document.addEventListener('pointerenter', () => gsap.to(el, { opacity: 1, duration: 0.3 }));
-}
-
 /* ---------- Magnetic buttons ---------- */
 export function initMagnetic() {
   if (!finePointer || reducedMotion) return;

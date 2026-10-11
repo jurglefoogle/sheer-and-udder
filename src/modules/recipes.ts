@@ -47,9 +47,10 @@ export function initRecipes() {
   hydratePics(grid);
 
   grid.addEventListener('click', (e) => {
-    const btn = (e.target as Element).closest<HTMLButtonElement>('.recipe__toggle');
-    if (!btn) return;
-    const card = btn.closest('.recipe')!;
+    // The whole card flips: once it tilts in 3D, the overlay button isn't reliably the hit target.
+    const card = (e.target as Element).closest('.recipe:not(.recipe--cta)');
+    if (!card) return;
+    const btn = card.querySelector('.recipe__toggle')!;
     const flipped = card.classList.toggle('is-flipped');
     btn.setAttribute('aria-pressed', String(flipped));
   });

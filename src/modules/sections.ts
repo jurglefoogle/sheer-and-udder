@@ -163,9 +163,9 @@ export function initPour() {
         start: 'top top',
         end: '+=320%',
         pin: '.pour__pin',
-        scrub: 0.8,
+        anticipatePin: 1,
+        scrub: 0.5,
         animation: tl,
-        snap: { snapTo: marks, duration: { min: 0.2, max: 0.6 }, ease: 'power2.inOut', delay: 0.1 },
         onUpdate: (self) => setStep(marks.filter((m) => self.progress >= m - 0.02).length - 1),
       });
     },

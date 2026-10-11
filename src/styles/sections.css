@@ -159,9 +159,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: rgb(26 15 10 / 0.72);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgb(26 15 10 / 0.85);
   box-shadow: 0 10px 30px rgb(0 0 0 / 0.35);
 }
 .hero__seal svg {
@@ -694,8 +692,7 @@
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
   border: 1px solid color-mix(in oklab, var(--accent) 70%, transparent);
-  background: rgb(15 8 5 / 0.45);
-  backdrop-filter: blur(6px);
+  background: rgb(15 8 5 / 0.78);
   color: var(--accent);
 }
 .flavor-card__badge.is-available {
@@ -753,8 +750,7 @@
   padding: 0.65rem;
   border-radius: 50%;
   border: 1px solid var(--line-strong);
-  background: rgb(15 8 5 / 0.45);
-  backdrop-filter: blur(6px);
+  background: rgb(15 8 5 / 0.78);
   fill: transparent;
   stroke: var(--milk);
   stroke-width: 1.6;
@@ -821,6 +817,7 @@
 }
 .recipe__card {
   position: relative;
+  cursor: pointer;
   width: 100%;
   aspect-ratio: 3 / 4.1;
   transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
@@ -917,8 +914,7 @@
   z-index: 1;
   padding: 0.4rem 0.75rem;
   border-radius: 999px;
-  background: rgb(15 8 5 / 0.55);
-  backdrop-filter: blur(6px);
+  background: rgb(15 8 5 / 0.78);
   font-size: 0.62rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1166,8 +1162,7 @@
   padding: 0.6rem;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
-  background: rgb(26 15 10 / 0.6);
-  backdrop-filter: blur(10px);
+  background: rgb(26 15 10 / 0.85);
   text-align: left;
 }
 .waitlist__form input,
