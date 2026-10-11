@@ -1,0 +1,111 @@
+{
+  "style": "Art direction: luxury editorial food and spirits photography for a premium adult chocolate milk brand called 'Sheer & Udder'. Dark, moody, cinematic speakeasy mood. Chiaroscuro lighting, warm tungsten key light with a soft cream rim light, deep ganache-brown background (#1a0f0a to #3b2117), rich shadows, glossy highlights, shallow depth of field, shot on medium format, 85mm. Palette: dark chocolate, milk cream, foil gold accents, a hint of deep cherry red. No people, no hands, no text, no logos, no watermarks unless explicitly requested.",
+  "shots": [
+    {
+      "id": "hero-tin",
+      "size": "1024x1536",
+      "ref": "assets/source/label-front.png",
+      "prompt": "Product hero render: a premium matte cocoa-brown cylindrical tin (about 13cm tall) with a brushed antique-gold lid. The attached label artwork is printed as the wraparound front label on the tin, reproduced faithfully (the pin-up cow in a brown dress sitting on a glass of chocolate milk, the 'Sheer & Udder' lettering and the 'Adult Chocolate Milk Mix' banner). Three-quarter front view, slightly low camera angle, heroic. Soft studio lighting with a warm gold rim light on the edges. Isolated on a perfectly flat, seamless, solid #d9d9d9 light gray studio background with no gradient, no floor, no cast shadow and no checkerboard pattern, so it can be cleanly cut out.",
+      "cutout": true
+    },
+    {
+      "id": "hero-pouch",
+      "size": "1024x1536",
+      "ref": "assets/source/label-front.png",
+      "prompt": "Product render: a premium stand-up resealable pouch in soft-touch matte dark chocolate brown with a gold foil zip edge. The attached label artwork is printed as the large front panel label, reproduced faithfully. Front view, slightly turned, crisp and luxurious. Warm studio light with a cream rim light. Isolated on a perfectly flat, seamless, solid #d9d9d9 light gray studio background with no gradient, no floor, no cast shadow and no checkerboard pattern, so it can be cleanly cut out.",
+      "cutout": true
+    },
+    {
+      "id": "splash-chocolate",
+      "size": "1536x1024",
+      "prompt": "A dramatic high-speed photograph of a glossy liquid chocolate-milk splash, a wide elegant crown and ribbons of dark chocolate milk flying sideways, droplets frozen in mid-air. Isolated on a perfectly flat, seamless, solid #d9d9d9 light gray studio background with no gradient, no floor, no cast shadow and no checkerboard pattern, so it can be cleanly cut out.",
+      "cutout": true
+    },
+    {
+      "id": "splash-milk",
+      "size": "1536x1024",
+      "prompt": "A dramatic high-speed photograph of a pure creamy white milk splash, elegant ribbon and wave shape flowing horizontally, small droplets frozen in the air. Isolated on a perfectly flat, seamless, solid #141414 near-black studio background with no gradient, no floor, no cast shadow and no checkerboard pattern, so it can be cleanly cut out.",
+      "cutout": true
+    },
+    {
+      "id": "story-bar",
+      "size": "1536x1024",
+      "prompt": "A chocolate milk cocktail in an etched crystal coupe glass sitting on a dark polished walnut speakeasy bar, a small pour of whiskey in a rocks glass beside it, a cacao pod and a vintage silver jigger. Background: blurred warm bokeh of back-bar bottles and an amber art-deco lamp. The composition leaves generous dark negative space on the left third for text."
+    },
+    {
+      "id": "curtain",
+      "size": "1536x1024",
+      "prompt": "Full-frame close-up of heavy deep cherry-red and chocolate-brown velvet theater curtains, rich soft folds, a narrow sliver of warm golden light glowing through the center seam, a gold tasseled tie-back. Moody, theatrical, luxurious. No stage, no people."
+    },
+    {
+      "id": "flavor-classic",
+      "size": "1024x1536",
+      "prompt": "Flavor still life: a tall fluted glass of rich dark chocolate milk with a velvety micro-foam top dusted with cocoa, a cracked-open cacao pod, cacao nibs, a split vanilla bean and a square of dark chocolate on dark slate. Warm brown and gold accent light."
+    },
+    {
+      "id": "flavor-mexican",
+      "size": "1024x1536",
+      "prompt": "Flavor still life: a tall fluted glass of spiced Mexican hot-style chocolate milk with a cinnamon-sugar rim and a cinnamon stick garnish, whole cinnamon sticks, a dried red ancho chile, a disc of rustic stone-ground chocolate and star anise on dark terracotta clay surface. Warm cinnamon-orange accent light."
+    },
+    {
+      "id": "flavor-smores",
+      "size": "1024x1536",
+      "prompt": "Flavor still life: a tall fluted glass of chocolate milk crowned with a big torched, golden-charred marshmallow, graham cracker crumbs on the rim, broken graham crackers and squares of milk chocolate beside it, a faint wisp of campfire smoke. Warm amber firelight accent."
+    },
+    {
+      "id": "flavor-boston-cream",
+      "size": "1024x1536",
+      "prompt": "Flavor still life: a tall fluted glass layered with vanilla custard cream at the bottom and chocolate milk on top, glossy chocolate ganache dripping down the outside of the rim, a slice of Boston cream pie with yellow sponge, custard and ganache beside it. Soft buttery yellow and chocolate accent light."
+    },
+    {
+      "id": "flavor-tiramisu",
+      "size": "1024x1536",
+      "prompt": "Flavor still life: a tall fluted glass of mocha chocolate milk topped with a thick mascarpone cream layer dusted with cocoa, a ladyfinger cookie perched on the rim, a small espresso cup, coffee beans and a dusting of cocoa on dark marble. Cool espresso-brown and cream accent light."
+    },
+    {
+      "id": "flavor-pb-cup",
+      "size": "1024x1536",
+      "prompt": "Flavor still life: a tall fluted glass of chocolate milk with a thick ribbon of peanut butter swirled down the inside of the glass, topped with crushed roasted peanuts, a peanut butter cup cut in half revealing the creamy center, whole peanuts scattered. Warm golden-orange accent light."
+    },
+    {
+      "id": "flavor-german-chocolate",
+      "size": "1024x1536",
+      "prompt": "Flavor still life: a tall fluted glass of dark chocolate milk topped with a gooey coconut-pecan caramel frosting, toasted coconut flakes and candied pecans scattered around, a slice of German chocolate cake beside it. Warm caramel accent light."
+    },
+    {
+      "id": "cocktail-grown-banana",
+      "size": "1024x1024",
+      "prompt": "Cocktail photograph: a heavy crystal rocks glass of chocolate banana milk with a tall swirl of whipped cream, dusted with cocoa, a caramelized banana slice garnish, a bottle-shaped blur of whiskey behind it, on a dark walnut bar."
+    },
+    {
+      "id": "cocktail-cinnamon-outlaw",
+      "size": "1024x1024",
+      "prompt": "Cocktail photograph: a chocolate milk cocktail served over a large clear ice cube in a short tumbler with a cinnamon-sugar rim and a flamed cinnamon stick garnish, a splash of golden reposado tequila in a jigger beside it, on dark terracotta."
+    },
+    {
+      "id": "cocktail-campfire-confession",
+      "size": "1024x1024",
+      "prompt": "Cocktail photograph: a chocolate milk cocktail in a vintage coupe topped with a torched marshmallow on a cocktail pick, graham crumb rim, a wisp of smoke curling around the glass, on a dark walnut bar."
+    },
+    {
+      "id": "cocktail-espresso-undressed",
+      "size": "1024x1024",
+      "prompt": "Cocktail photograph: a chilled martini glass of creamy mocha chocolate milk cocktail with a thick velvety foam, three coffee beans on top and a dusting of cocoa, an espresso cup softly blurred behind, on dark marble."
+    },
+    {
+      "id": "cocktail-nutty-professor",
+      "size": "1024x1024",
+      "prompt": "Cocktail photograph: a stemmed glass of chocolate peanut butter milk cocktail with a crushed-peanut rim and a mini peanut butter cup on a pick, on a dark walnut bar with warm golden light."
+    },
+    {
+      "id": "cocktail-cream-of-the-crop",
+      "size": "1024x1024",
+      "prompt": "Cocktail photograph: a Nick-and-Nora glass of vanilla-custard and chocolate layered milk cocktail with glossy ganache drizzled on the inside of the glass, a small cream rosette on top, on dark slate."
+    },
+    {
+      "id": "cocktail-coconut-confidential",
+      "size": "1024x1024",
+      "prompt": "Cocktail photograph: a short glass of dark chocolate milk cocktail with dark rum, rimmed with toasted coconut, garnished with a candied pecan and coconut flakes, a caramel drizzle, on a dark walnut bar."
+    }
+  ]
+}

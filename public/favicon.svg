@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6c987"/><stop offset="1" stop-color="#a77f3a"/></linearGradient></defs>
+  <rect width="64" height="64" rx="14" fill="#1a0f0a"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="11" fill="none" stroke="#c9a25a" stroke-opacity=".5"/>
+  <text x="32" y="47" text-anchor="middle" font-family="'Snell Roundhand','Pinyon Script','Brush Script MT',cursive" font-size="44" fill="url(#g)">&amp;</text>
+</svg>

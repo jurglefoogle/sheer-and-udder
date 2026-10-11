@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Sheer &amp; Udder — Chocolate Milk, All Grown Up</title>
+    <meta name="description" content="Sheer & Udder is a rich, creamy dark chocolate milk mix crafted for grown-ups. Enjoy it hot, cold, over ice — or with a splash of your favorite spirit." />
+    <meta name="theme-color" content="#1a0f0a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sheer & Udder — Chocolate Milk, All Grown Up" />
+    <meta property="og:description" content="A little nostalgic. A little naughty. The adult chocolate milk mix from Asinine Products." />
+    <meta property="og:image" content="https://jurglefoogle.github.io/sheer-and-udder/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&family=Inter+Tight:wght@300..700&display=swap"
+    />
+    <script>
+      // Pre-paint flags so the gate and preloader never flash for returning visitors.
+      try {
+        if (localStorage.getItem('su-age') === 'yes') document.documentElement.classList.add('is-verified');
+      } catch (e) {}
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- ============ PRELOADER ============ -->
+    <div class="preloader" aria-hidden="true">
+      <svg class="preloader__glass" viewBox="0 0 120 160">
+        <defs>
+          <clipPath id="pre-clip"><path d="M18 8h84l-9 140a8 8 0 0 1-8 7H35a8 8 0 0 1-8-7z" /></clipPath>
+        </defs>
+        <g clip-path="url(#pre-clip)">
+          <rect class="preloader__fill" x="0" y="0" width="120" height="160" />
+        </g>
+        <path d="M18 8h84l-9 140a8 8 0 0 1-8 7H35a8 8 0 0 1-8-7z" fill="none" stroke="currentColor" stroke-width="2" />
+      </svg>
+      <p class="preloader__count"><span>0</span>%</p>
+      <p class="preloader__label">Pouring&hellip;</p>
+    </div>
+
+    <!-- ============ AGE GATE ============ -->
+    <div class="agegate" role="dialog" aria-modal="true" aria-labelledby="agegate-title" data-agegate>
+      <div class="agegate__curtain agegate__curtain--l"><div class="pic pic--cover" data-pic="curtain" data-alt="" data-sizes="50vw" data-eager></div></div>
+      <div class="agegate__curtain agegate__curtain--r"><div class="pic pic--cover" data-pic="curtain" data-alt="" data-sizes="50vw" data-eager></div></div>
+      <div class="agegate__card">
+        <svg class="deco-frame" aria-hidden="true"><use href="#deco-frame" /></svg>
+        <p class="eyebrow">Members&rsquo; Entrance</p>
+        <h2 id="agegate-title" class="agegate__title">Are you old enough<br />to take your milk <em>this&nbsp;way?</em></h2>
+        <div class="agegate__actions" data-gate-ask>
+          <button class="btn btn--gold" data-gate-yes>Yes, pour me one</button>
+          <button class="btn btn--ghost" data-gate-no>Not yet</button>
+        </div>
+        <div class="agegate__nope" data-gate-nope hidden>
+          <p class="agegate__juice" aria-hidden="true">🧃</p>
+          <p>Here&rsquo;s a juice box, champ. Come back when you&rsquo;re 21 &mdash; we&rsquo;ll keep the milk cold.</p>
+          <button class="btn btn--ghost btn--sm" data-gate-back>Wait, I miscounted</button>
+        </div>
+        <p class="agegate__fine">You must be of legal drinking age to view recipes containing alcohol. Please enjoy responsibly.</p>
+      </div>
+    </div>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav" data-nav>
+      <a class="nav__brand" href="#top">
+        <span>Sheer</span><span class="amp">&amp;</span><span>Udder</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#story">Story</a>
+        <a href="#pour">The Pour</a>
+        <a href="#flavors">Flavors</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#fine-print">Fine Print</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--ghost btn--sm nav__cta" href="#waitlist">Join the list</a>
+        <button class="nav__bag" data-cart-open aria-label="Open bag, 0 items">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9z" /><path d="M9 8V6a3 3 0 0 1 6 0v2" /></svg>
+          <span class="nav__count" data-cart-count>0</span>
+        </button>
+        <button class="nav__menu" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </header>
+    <div class="mobile-menu" id="mobile-menu" data-menu hidden>
+      <a href="#story">Story</a><a href="#pour">The Pour</a><a href="#flavors">Flavors</a><a href="#recipes">Recipes</a><a href="#fine-print">Fine Print</a><a href="#waitlist">Join the list</a>
+    </div>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top">
+        <canvas class="hero__shader" data-shader aria-hidden="true"></canvas>
+        <div class="hero__veil" aria-hidden="true"></div>
+        <div class="hero__inner">
+          <div class="hero__copy">
+            <p class="eyebrow" data-hero-in>Adult Chocolate Milk Mix &middot; Small Batch</p>
+            <h1 class="hero__title" data-hero-title aria-label="Chocolate milk, all grown up.">
+              <span class="line">Chocolate milk,</span>
+              <span class="line"><em>all grown up.</em></span>
+            </h1>
+            <p class="hero__lede" data-hero-in>
+              A rich, creamy dark chocolate mix crafted for after hours. Add a splash of your favorite spirit &mdash; or don&rsquo;t. We won&rsquo;t tell.
+            </p>
+            <div class="hero__ctas" data-hero-in>
+              <button class="btn btn--gold magnetic" data-add-to-cart="tin"><span>Add to bag &mdash; $29</span></button>
+              <a class="btn btn--ghost magnetic" href="#waitlist"><span>Get the first pour</span></a>
+            </div>
+            <ul class="hero__badges" data-hero-in>
+              <li>Dutch-process cocoa</li>
+              <li>Malted whole milk</li>
+              <li>Spirit-ready</li>
+            </ul>
+          </div>
+          <div class="hero__product" data-tilt>
+            <div class="hero__halo" aria-hidden="true"></div>
+            <div class="hero__splash hero__splash--back" data-depth="0.25" aria-hidden="true"><div class="pic" data-pic="splash-chocolate" data-alt="" data-sizes="50vw"></div></div>
+            <div class="hero__tin" data-depth="0.6"><div class="pic" data-pic="hero-tin" data-alt="Sheer &amp; Udder Classic tin with the pin-up cow label" data-sizes="(min-width: 900px) 34vw, 70vw" data-eager data-fallback="label-front"></div></div>
+            <div class="hero__splash hero__splash--front" data-depth="1" aria-hidden="true"><div class="pic" data-pic="splash-milk" data-alt="" data-sizes="50vw"></div></div>
+            <div class="hero__seal" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><defs><path id="seal-path" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0" /></defs><text><textPath href="#seal-path">Grown-ups only &bull; After hours &bull; </textPath></text></svg>
+              <span>21<sup>+</sup></span>
+            </div>
+          </div>
+        </div>
+        <a class="hero__scroll" href="#story" aria-label="Scroll to story"><span>Scroll</span><i></i></a>
+      </section>
+
+      <!-- ============ MARQUEE ============ -->
+      <div class="marquee" aria-hidden="true" data-marquee><div class="marquee__track" data-marquee-track></div></div>
+
+      <!-- ============ STORY ============ -->
+      <section class="story" id="story">
+        <div class="story__bg"><div class="pic pic--cover" data-pic="story-bar" data-alt="" data-sizes="100vw"></div></div>
+        <div class="container story__grid">
+          <div class="story__art" data-story-art>
+            <div class="story__frame">
+              <div class="pic" data-pic="label-front" data-alt="The Sheer &amp; Udder label: a pin-up cow in a chocolate silk dress perched on a glass of chocolate milk" data-sizes="(min-width: 900px) 40vw, 90vw"></div>
+            </div>
+            <p class="story__caption">Fig. 1 &mdash; The Lady of the House</p>
+          </div>
+          <div class="story__copy">
+            <p class="eyebrow" data-reveal>The Lady of the House</p>
+            <h2 class="display display--md" data-split>She grew up on the farm. She never cared much for <em>curfew.</em></h2>
+            <p class="lead" data-reveal>
+              We took the drink you begged for after school and gave it a little leg. Dutch-process cocoa and real whole-milk powder, deepened with malted barley and balanced with a pinch of sea salt so it plays nicely with whiskey, rum &mdash; or nothing at all.
+            </p>
+            <blockquote class="pullquote" data-reveal>
+              <span class="amp" aria-hidden="true">&ldquo;</span>A little nostalgic.<br />A little <em>naughty.</em>
+            </blockquote>
+            <dl class="stats" data-reveal>
+              <div><dt>Per pour</dt><dd><span data-count="2">2</span> Tbsp</dd></div>
+              <div><dt>Calories</dt><dd><span data-count="80">80</span></dd></div>
+              <div><dt>Serve it</dt><dd>Hot &middot; Cold &middot; Iced</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ POUR ============ -->
+      <section class="pour" id="pour" data-pour>
+        <div class="pour__pin">
+          <div class="container pour__grid">
+            <div class="pour__head">
+              <p class="eyebrow">How It Pours</p>
+              <h2 class="display">Five steps to <em>after hours.</em></h2>
+            </div>
+            <div class="pour__stage">
+              <div class="pour__num" aria-hidden="true"><span data-pour-num>01</span><small>/05</small></div>
+              <svg class="pour__glass" viewBox="0 0 220 320" aria-hidden="true">
+                <defs>
+                  <clipPath id="glass-clip"><path d="M32 22h156l-15 268a14 14 0 0 1-14 13H61a14 14 0 0 1-14-13z" /></clipPath>
+                  <linearGradient id="glass-shine" x1="0" x2="1">
+                    <stop offset="0" stop-color="#fff" stop-opacity=".22" />
+                    <stop offset=".18" stop-color="#fff" stop-opacity="0" />
+                    <stop offset=".82" stop-color="#fff" stop-opacity="0" />
+                    <stop offset="1" stop-color="#fff" stop-opacity=".12" />
+                  </linearGradient>
+                </defs>
+                <g clip-path="url(#glass-clip)">
+                  <g class="pour__liquid" data-liquid>
+                    <path class="pour__wave" data-wave d="M-220 0 q27.5 -10 55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 t55 0 V400 H-220z" />
+                    <rect class="pour__spirit" data-spirit x="0" y="0" width="220" height="400" />
+                    <g class="pour__foam" data-foam>
+                      <ellipse cx="60" cy="2" rx="40" ry="9" /><ellipse cx="120" cy="0" rx="46" ry="11" /><ellipse cx="172" cy="3" rx="36" ry="8" />
+                    </g>
+                  </g>
+                  <g class="pour__cocoa" data-cocoa></g>
+                </g>
+                <path d="M32 22h156l-15 268a14 14 0 0 1-14 13H61a14 14 0 0 1-14-13z" fill="url(#glass-shine)" />
+                <path class="pour__outline" d="M32 22h156l-15 268a14 14 0 0 1-14 13H61a14 14 0 0 1-14-13z" />
+                <g class="pour__whisk" data-whisk>
+                  <path d="M110 -60 V120" />
+                  <path d="M110 120 c-22 0 -22 52 0 52 c22 0 22 -52 0 -52z M110 120 c-10 0 -10 52 0 52 c10 0 10 -52 0 -52z" />
+                </g>
+              </svg>
+            </div>
+            <ol class="pour__steps" data-pour-steps>
+              <li class="is-active"><span class="pour__k">01 &middot; Milk</span><strong>8 oz, any kind</strong><p>Dairy, almond, oat, banana &mdash; she isn&rsquo;t picky.</p></li>
+              <li><span class="pour__k">02 &middot; The Mix</span><strong>2 Tbsp Sheer &amp; Udder</strong><p>One level scoop. Heaping is between you and your conscience.</p></li>
+              <li><span class="pour__k">03 &middot; Spirit <em>(optional)</em></span><strong>1&frac12;&ndash;2 oz</strong><p>Whiskey, rum, or whatever&rsquo;s winking at you from the cabinet.</p></li>
+              <li><span class="pour__k">04 &middot; Froth</span><strong>Whisk it into velvet</strong><p>Milk frother, whisk, blender &mdash; or a very determined spoon.</p></li>
+              <li><span class="pour__k">05 &middot; Sip</span><strong>Adult chocolate milk</strong><p>Hot, cold, or over ice. No crusts were cut in the making of this drink.</p></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FLAVORS ============ -->
+      <section class="flavors" id="flavors" data-flavors>
+        <div class="flavors__pin">
+          <div class="flavors__head container">
+            <div>
+              <p class="eyebrow">The Tasting Menu</p>
+              <h2 class="display">One classic. <em>Six temptations</em> waiting in the wings.</h2>
+            </div>
+            <p class="flavors__hint">Vote for what we pour next &mdash; tap the heart.</p>
+          </div>
+          <div class="flavors__viewport">
+            <ul class="flavors__track" data-flavor-track></ul>
+          </div>
+          <div class="flavors__progress" aria-hidden="true"><i data-flavor-progress></i></div>
+        </div>
+      </section>
+
+      <!-- ============ RECIPES ============ -->
+      <section class="recipes" id="recipes">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow" data-reveal>After-Hours Recipes</p>
+            <h2 class="display display--md" data-split>Recipes we couldn&rsquo;t fit <em>on the label.</em></h2>
+            <p class="lead" data-reveal>Tap a card to flip it. Measurements are suggestions; confidence is mandatory.</p>
+          </div>
+          <ul class="recipes__grid" data-recipe-grid></ul>
+        </div>
+      </section>
+
+      <!-- ============ FINE PRINT ============ -->
+      <section class="fineprint" id="fine-print">
+        <div class="container fineprint__grid">
+          <div class="fineprint__copy">
+            <p class="eyebrow" data-reveal>The Fine Print</p>
+            <h2 class="display display--md" data-split>Nothing to hide. <em>Well, almost.</em></h2>
+            <p class="lead" data-reveal>Six ingredients. Real milk, real cocoa, and nothing you need a chemistry degree to pronounce.</p>
+            <ol class="ingredients" data-reveal>
+              <li><span>01</span>Sugar</li>
+              <li><span>02</span>Whole milk powder</li>
+              <li><span>03</span>Malted milk powder <small>(wheat, barley)</small></li>
+              <li><span>04</span>Cocoa powder <small>(processed with alkali)</small></li>
+              <li><span>05</span>Vanilla powder</li>
+              <li><span>06</span>Sea salt</li>
+            </ol>
+            <p class="allergen" data-reveal><strong>Contains:</strong> Milk and Wheat.</p>
+          </div>
+          <div class="nutrition" data-reveal>
+            <h3 class="nutrition__title">Nutrition Facts</h3>
+            <p class="nutrition__serving"><span>Serving size</span><strong>2 Tbsp (20 g)</strong></p>
+            <p class="nutrition__cal"><span>Calories</span><strong>80</strong></p>
+            <table>
+              <caption class="sr-only">Nutrition per 2 tablespoon serving</caption>
+              <tbody>
+                <tr><th>Total Fat</th><td>2 g</td></tr>
+                <tr class="sub"><th>Saturated Fat</th><td>1.5 g</td></tr>
+                <tr><th>Cholesterol</th><td>5 mg</td></tr>
+                <tr><th>Sodium</th><td>80 mg</td></tr>
+                <tr><th>Total Carbohydrate</th><td>14 g</td></tr>
+                <tr class="sub"><th>Dietary Fiber</th><td>1 g</td></tr>
+                <tr class="sub"><th>Total Sugars</th><td>11 g</td></tr>
+                <tr class="sub sub2"><th>Includes Added Sugars</th><td>11 g</td></tr>
+                <tr><th>Protein</th><td>3 g</td></tr>
+                <tr class="thin"><th>Calcium</th><td>100 mg</td></tr>
+                <tr class="thin"><th>Iron</th><td>1 mg</td></tr>
+              </tbody>
+            </table>
+            <p class="nutrition__note">Mix only. Your choice of milk and spirit is your own business.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WAITLIST ============ -->
+      <section class="waitlist" id="waitlist">
+        <div class="waitlist__glow" aria-hidden="true"></div>
+        <div class="container waitlist__inner">
+          <p class="eyebrow" data-reveal>Get the First Pour</p>
+          <h2 class="display display--xl" data-split>Be first in line <em>after hours.</em></h2>
+          <p class="lead" data-reveal>Launch-day access, first dibs on new flavors, and the recipes we&rsquo;d never print on a tin.</p>
+          <form class="waitlist__form" data-waitlist novalidate data-reveal>
+            <label class="sr-only" for="wl-email">Email address</label>
+            <input id="wl-email" name="email" type="email" autocomplete="email" placeholder="you@afterhours.com" required />
+            <label class="sr-only" for="wl-flavor">Flavor you want most</label>
+            <select id="wl-flavor" name="flavor" data-flavor-select>
+              <option value="">Flavor you&rsquo;re craving&hellip;</option>
+            </select>
+            <button class="btn btn--gold magnetic" type="submit"><span>Save my seat</span></button>
+            <p class="waitlist__msg" data-waitlist-msg role="status" aria-live="polite"></p>
+          </form>
+          <div class="waitlist__done" data-waitlist-done hidden>
+            <p class="waitlist__check" aria-hidden="true">✓</p>
+            <h3>You&rsquo;re on the list.</h3>
+            <p>Keep it chilled. We&rsquo;ll be in touch before the first pour.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__mark" aria-hidden="true">Sheer<span class="amp">&amp;</span>Udder</p>
+        <div class="footer__grid">
+          <div>
+            <h3>The Brand</h3>
+            <p>Sheer &amp; Udder is a product of <strong>Asinine Products</strong>.</p>
+            <p class="footer__tag">A little nostalgic. A little naughty.</p>
+          </div>
+          <div>
+            <h3>Say Hello</h3>
+            <p><a href="tel:+19182300056">918.230.0056</a> <small>(call or text)</small></p>
+            <p><a href="mailto:glinden@asininesigns.com">glinden@asininesigns.com</a></p>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <p><a href="#flavors">Flavors</a> &middot; <a href="#recipes">Recipes</a> &middot; <a href="#fine-print">Fine Print</a></p>
+            <p><a href="#waitlist">Join the list</a></p>
+          </div>
+        </div>
+        <div class="footer__legal">
+          <p>&copy; <span data-year>2026</span> Asinine Products. All rights reserved.</p>
+          <p>Please enjoy responsibly. Must be 21+ to add spirits. Contains milk and wheat.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ CART DRAWER ============ -->
+    <div class="scrim" data-scrim hidden></div>
+    <aside class="drawer cart" data-cart role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" inert>
+      <header class="drawer__head">
+        <h2 id="cart-title">Your Bag</h2>
+        <button class="drawer__close" data-close aria-label="Close bag">&times;</button>
+      </header>
+      <div class="cart__body" data-cart-body></div>
+      <div class="cart__upsell" data-cart-upsell></div>
+      <footer class="cart__foot">
+        <p class="cart__ship" data-cart-ship></p>
+        <p class="cart__total"><span>Subtotal</span><strong data-cart-total>$0</strong></p>
+        <button class="btn btn--gold btn--block" data-checkout>Checkout</button>
+        <p class="cart__demo">Preview store &mdash; no payment is taken.</p>
+      </footer>
+    </aside>
+
+    <!-- ============ FLAVOR DRAWER ============ -->
+    <aside class="drawer flavor-drawer" data-flavor-drawer role="dialog" aria-modal="true" aria-labelledby="fd-title" aria-hidden="true" inert>
+      <button class="drawer__close" data-close aria-label="Close flavor details">&times;</button>
+      <div data-flavor-drawer-body></div>
+    </aside>
+
+    <!-- ============ CHECKOUT MODAL ============ -->
+    <div class="modal" data-modal role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true" inert>
+      <div class="modal__card">
+        <svg class="deco-frame" aria-hidden="true"><use href="#deco-frame" /></svg>
+        <p class="eyebrow">Demo Checkout</p>
+        <h2 id="modal-title">Easy, tiger.</h2>
+        <p>The store opens soon. This is a preview, so nothing was charged. Leave your email and we&rsquo;ll hold your bag for launch day.</p>
+        <div class="modal__actions">
+          <a class="btn btn--gold" href="#waitlist" data-close>Hold my bag</a>
+          <button class="btn btn--ghost" data-close>Keep browsing</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <div class="cursor" aria-hidden="true"><i></i></div>
+
+    <!-- Shared SVG symbols -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="deco-frame" viewBox="0 0 400 500" preserveAspectRatio="none">
+        <g fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke">
+          <rect x="8" y="8" width="384" height="484" />
+          <rect x="16" y="16" width="368" height="468" />
+          <path d="M8 48 H48 V8 M352 8 V48 H392 M392 452 H352 V492 M48 492 V452 H8" />
+        </g>
+      </symbol>
+    </svg>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
